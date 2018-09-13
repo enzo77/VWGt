@@ -1,0 +1,120 @@
+
+
+/* 
+    LINE MOVE SLOW MO
+*/ 
+
+#lineField {
+  height: 600px;
+  width: 300px;
+    overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+/*
+    background-image: url(../bgFloat.png);
+    background-size: 300px 600px;
+*/
+/*  background-image: linear-gradient(-180deg, #000317 0%, #192157 26%, #071151 49%, #192157 74%, #000317 100%);*/
+}
+
+#text {
+  font-size: 20vw;
+  color: #fff;
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  opacity: 0;
+  letter-spacing: 2px;
+  text-shadow: 4px 4px 0 #F8E71C;
+}
+
+.line {
+    position: absolute;
+    z-index: 0;
+    opacity: 0.5;
+}
+.line--1 {
+    width: 300px;
+    height:1px;
+    background-image: radial-gradient(50% 50%, #71171a 50%, rgba(109, 7,7,16) 83%, rgba(0, 0, 0, 0) 100%);
+}
+.line--2 {
+    height: 5px;
+    width: 200px;
+    background-image: radial-gradient(50% 50%, #71171a 50%,  rgba(109, 7,7,16) 83%, rgba(0, 0, 0, 0) 100%);
+}
+.line--3 {
+  height: 4px;
+  width: 300px;
+ background-image: radial-gradient(50% 50%, #71171a 50%,  rgba(109, 7,7,16)83%, rgba(0, 0, 0, 0) 100%);
+}
+.line--4 {
+  height:3px;
+  width: 400px;
+  min-width: 620px;
+  background-image: radial-gradient(50% 50%, #71171a 50%,  rgba(109, 7,7,16) 83%, rgba(45, 3, 0, 0) 100%);
+}
+.line--5 {
+  height: 6px;
+  width: 700px;
+ background-image: radial-gradient(50% 50%, #71171a 50%,  rgba(109, 7,7,16) 83%, rgba(45, 3, 0, 0) 100%);
+}
+
+.line--6 {
+  height: 2px;
+  width: 900px;
+ background-image: radial-gradient(50% 50%, #71171a 50%,  rgba(109, 7,7,16) 83%, rgba(45, 3, 0, 0) 100%);
+}
+
+
+
+#vendorsWrapper {
+    width: 300px;
+    height: 600px;
+    top: 0;
+    position: absolute;
+    z-index: 9999;
+    overflow: hidden;
+    white-space: nowrap;
+}
+#vendorsList {
+/*    background-image: url(https://i.imgur.com/iN6ELIb.jpg);*/
+    height: 348px;
+    width: 548px;
+    position: absolute;
+}
+
+.logoR {
+    width: 200px;
+    height: auto;
+}
+
+#logoR {
+position: absolute;
+    top: 67px;
+    left: 47px;
+}
+
+#nomoreTest {
+    position: absolute;
+    top: 95px;
+    left: 30px;
+    top: 95px;
+    left: 20px;
+    animation: zoomLogo 0.3s forwards ease-in; 
+}
+
+
+@keyframes zoomLogo {
+    0% { 
+        transform: matrix(9, -3, 3, 9, 0, 0)
+    }
+    
+    100% { 
+        transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+}
+
